@@ -1,0 +1,27 @@
+{
+  "name": "codesync-back",
+  "version": "0.0.1",
+  "description": "A social network for developers (backend)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "Carlos David Vazquez Herrera",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-fileupload": "^1.5.0",
+    "@types/node": "^20.12.12",
+    "rimraf": "^5.0.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env-var": "^7.4.2",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.0"
+  }
+}
